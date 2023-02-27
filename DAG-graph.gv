@@ -1,21 +1,39 @@
 strict digraph {
 
-	"1" [  weight=0 ];
+	"6" [ label="commit 5",  weight=0 ];
 
-	"1" -> "2" [  weight=0 ];
+	"6" -> "8" [ label="main",  weight=0 ];
 
-	"2" [  weight=0 ];
+	"5" [ label="commit 1",  weight=0 ];
 
-	"2" -> "3" [  weight=0 ];
+	"5" -> "7" [ label="feature",  weight=0 ];
 
-	"3" [  weight=0 ];
+	"7" [ label="commit 2",  weight=0 ];
 
-	"3" -> "4" [  weight=0 ];
+	"7" -> "8" [ label="merge",  weight=0 ];
 
-	"3" -> "5" [  weight=0 ];
+	"8" [ label="merge into main, commit 6",  weight=0 ];
 
-	"4" [  weight=0 ];
+	"8" -> "9" [ label="main",  weight=0 ];
 
-	"5" [  weight=0 ];
+	"1" [ label="commit 1",  weight=0 ];
+
+	"1" -> "2" [ label="main",  weight=0 ];
+
+	"3" [ label="commit 3",  weight=0 ];
+
+	"3" -> "4" [ label="main",  weight=0 ];
+
+	"3" -> "5" [ label="feature",  weight=0 ];
+
+	"4" [ label="commit 4",  weight=0 ];
+
+	"4" -> "6" [ label="main",  weight=0 ];
+
+	"2" [ label="commit 2",  weight=0 ];
+
+	"2" -> "3" [ label="main",  weight=0 ];
+
+	"9" [ label="commit 7",  weight=0 ];
 
 }
